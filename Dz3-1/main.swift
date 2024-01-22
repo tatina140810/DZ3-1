@@ -7,5 +7,17 @@
 
 import Foundation
 
-print("Hello, World!")
+var files: [MultimediaFile] = []
 
+let audio = AudioFile(duration: 90.6)
+let video = VideoFile(resolution: "4k")
+let image = ImageFile(dimensions: "800x600")
+
+files.append(audio)
+files.append(video)
+files.append(image)
+
+
+for file in files {
+    file.displayInfo()
+}

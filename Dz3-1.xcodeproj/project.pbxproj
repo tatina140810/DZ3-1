@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AFB920F42B5E87970060560A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB920F32B5E87970060560A /* main.swift */; };
+		AFB920FB2B5E87B00060560A /* MultimediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB920FA2B5E87B00060560A /* MultimediaFile.swift */; };
+		AFB920FD2B5E87D50060560A /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB920FC2B5E87D50060560A /* AudioFile.swift */; };
+		AFB920FF2B5E880A0060560A /* VideoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB920FE2B5E880A0060560A /* VideoFile.swift */; };
+		AFB921012B5E882D0060560A /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB921002B5E882D0060560A /* ImageFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		AFB920F02B5E87970060560A /* Dz3-1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Dz3-1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB920F32B5E87970060560A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AFB920FA2B5E87B00060560A /* MultimediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultimediaFile.swift; sourceTree = "<group>"; };
+		AFB920FC2B5E87D50060560A /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
+		AFB920FE2B5E880A0060560A /* VideoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFile.swift; sourceTree = "<group>"; };
+		AFB921002B5E882D0060560A /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				AFB920F32B5E87970060560A /* main.swift */,
+				AFB920FA2B5E87B00060560A /* MultimediaFile.swift */,
+				AFB920FC2B5E87D50060560A /* AudioFile.swift */,
+				AFB920FE2B5E880A0060560A /* VideoFile.swift */,
+				AFB921002B5E882D0060560A /* ImageFile.swift */,
 			);
 			path = "Dz3-1";
 			sourceTree = "<group>";
@@ -120,7 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB920FD2B5E87D50060560A /* AudioFile.swift in Sources */,
+				AFB920FF2B5E880A0060560A /* VideoFile.swift in Sources */,
+				AFB920FB2B5E87B00060560A /* MultimediaFile.swift in Sources */,
 				AFB920F42B5E87970060560A /* main.swift in Sources */,
+				AFB921012B5E882D0060560A /* ImageFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
