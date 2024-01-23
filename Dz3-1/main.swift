@@ -21,3 +21,13 @@ files.append(image)
 for file in files {
     file.displayInfo()
 }
+
+var filesWithExtention: [String] = []
+
+let audioWithExtention = AudioFile(duration: 90.6).editionalInfo()
+let videoWithExtention = VideoFile(resolution: "4k").editionalInfo()
+let imageWithExtention = ImageFile(dimensions: "800x600").editionalInfo()
+
+filesWithExtention.append(audioWithExtention)
+filesWithExtention.append(videoWithExtention)
+filesWithExtention.append(imageWithExtention)

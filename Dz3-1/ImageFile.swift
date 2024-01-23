@@ -18,3 +18,10 @@ class ImageFile: MultimediaFile {
         print("Изображение, размеры: \(dimensions)")
     }
 }
+extension ImageFile {
+    
+    func editionalInfo() -> String {
+        print("Изображение файл формата png")
+        return "Изображение формата png"
+    }
+}

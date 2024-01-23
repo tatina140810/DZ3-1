@@ -18,3 +18,11 @@ class VideoFile: MultimediaFile {
         print("Видео-файл, разрешение: \(resolution)")
     }
 }
+
+extension VideoFile {
+    
+    func editionalInfo() -> String {
+        print("Видео-файл файл формата 4K")
+        return "Видео-файл формата 4K"
+    }
+}
