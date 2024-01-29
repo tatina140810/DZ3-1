@@ -7,15 +7,17 @@
 
 import Foundation
 
-class ImageFile: MultimediaFile {
+class ImageFile: MultimediaFile, TitleLabel {
     var dimensions: String
+    var titleLabel: String
     
-    init(dimensions: String) {
+    init(titleLabel: String, dimensions: String) {
         self.dimensions = dimensions
+        self.titleLabel = titleLabel
     }
     
     override func displayInfo() {
-        print("Изображение, размеры: \(dimensions)")
+        print("Изображение, с названием: \(titleLabel), размеры: \(dimensions)")
     }
 }
 extension ImageFile {

@@ -7,15 +7,17 @@
 
 import Foundation
 
-class AudioFile: MultimediaFile {
+class AudioFile: MultimediaFile, TitleLabel {
+    var titleLabel: String
     var duration: TimeInterval
     
-    init(duration: TimeInterval) {
+    init(titleLabel: String, duration: TimeInterval) {
         self.duration = duration
+        self.titleLabel = titleLabel
     }
     
     override func displayInfo() {
-        print("Аудио-файл, продолжительность: \(duration) секунд")
+        print("Аудио-файл, под назваием: \(titleLabel), продолжительность: \(duration) секунд")
     }
 }
 

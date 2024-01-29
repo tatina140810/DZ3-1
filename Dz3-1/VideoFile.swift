@@ -7,15 +7,16 @@
 
 import Foundation
 
-class VideoFile: MultimediaFile {
+class VideoFile: MultimediaFile, TitleLabel {
     var resolution: String
-    
-    init(resolution: String) {
+    var titleLabel: String
+    init(titleLabel: String, resolution: String) {
         self.resolution = resolution
+        self.titleLabel = titleLabel
     }
     
     override func displayInfo() {
-        print("Видео-файл, разрешение: \(resolution)")
+        print("Видео-файл, с названием: \(titleLabel), разрешение: \(resolution)")
     }
 }
 
