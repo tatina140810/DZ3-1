@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//protocol
 protocol TitleLabel {
     
     var titleLabel: String {get set}

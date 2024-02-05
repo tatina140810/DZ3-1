@@ -10,16 +10,28 @@ import Foundation
 class ImageFile: MultimediaFile, TitleLabel {
     var dimensions: String
     var titleLabel: String
+    var numberOfArticul: Double
     
-    init(titleLabel: String, dimensions: String) {
+    init(titleLabel: String, dimensions: String, numberOfArticul: Double) {
         self.dimensions = dimensions
         self.titleLabel = titleLabel
+        self.numberOfArticul = numberOfArticul
     }
     
     override func displayInfo() {
         print("Изображение, с названием: \(titleLabel), размеры: \(dimensions)")
     }
+    override func articul<T>(numberOfArticul: T) {
+        
+        print("Номер артикула в каталоге изображения: \(numberOfArticul)")
+        
+       
+    }
+    override var fullInfo: String {
+            return "Изображение, с названием: \(titleLabel), размеры: \(dimensions)"
+        }
 }
+//расширение
 extension ImageFile {
     
     func editionalInfo() -> String {
